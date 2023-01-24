@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo s6-rc change nordvpn
+sleep 1
+nordvpn $@
