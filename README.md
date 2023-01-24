@@ -6,5 +6,5 @@ My personal scripts.
 cd /tmp
 git clone https://github.com/dark7void/Scripts  
 cd Scripts  
-sudo cp * /usr/bin
+sudo cp -r !(*.md) /usr/bin
 ```
