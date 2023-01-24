@@ -1,0 +1,10 @@
+#!/bin/bash
+ip=$(curl -s ifconfig.me)
+pattern='"[^"][A-Z]"'
+ipinfo=$(curl -s ipinfo.io/json | grep "country" | grep -o $pattern)
+echo ""
+echo -n " ->  "$ipinfo
+echo " "$(echo $ip | head -c9)
+length=$(echo $ip | wc -c)
+echo " ->  Length: $length"
+echo ""
